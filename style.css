@@ -1,0 +1,29 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  background: #fdfdfd;
+  color: #333;
+}
+header {
+  background: #4b6cb7; background: linear-gradient(to right, #182848, #4b6cb7);
+  color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;
+}
+header h1 { margin: 0; }
+nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: 600; }
+nav a:hover { text-decoration: underline; }
+
+section { padding: 40px 20px; max-width: 900px; margin: auto; }
+.hero { text-align: center; }
+.hero button { padding: 10px 20px; font-size: 1rem; background: #ff7e5f; color: white; border: none; border-radius: 5px; cursor: pointer; }
+.hero button:hover { background: #feb47b; }
+
+.about, .contact, .blogs { background: #fff; margin: 20px 0; border-radius: 10px; padding: 30px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+
+#blog-list { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+
+#new-post-btn { margin-top: 20px; padding: 10px 15px; cursor: pointer; background: #4b6cb7; color: white; border: none; border-radius: 5px; }
+#new-post-btn:hover { background: #182848; }
+
+footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; background: #f1f1f1; margin-top: 40px; }
+input, textarea { width: 100%; margin-bottom: 15px; padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+button { cursor: pointer; }
