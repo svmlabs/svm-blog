@@ -7,34 +7,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>SVM Blog</h1>
-    <p>Welcome to SVM Blog — write, share, and explore modern web articles!</p>
+  <header class="header">
+    <div class="container">
+      <h1>SVM Blog</h1>
+      <p>Modern, responsive, and clean articles at SVM Labs</p>
+    </div>
   </header>
 
-  <section id="blogs-section">
-    <div id="blog-list">
-      <!-- Blog posts will be dynamically inserted here -->
-      <div class="blog-post">
-        <h2>Sample Blog Post</h2>
-        <pre>
-This is a sample blog post. It should wrap nicely inside the box without going in one long line. You can now write new posts using the + Write New Blog button.
-        </pre>
+  <main class="container">
+    <section id="blogs-section">
+      <div id="blog-list" class="blog-grid">
+        <!-- Sample post -->
+        <div class="blog-post">
+          <h2>Sample Blog Post</h2>
+          <p>This is how your new blogs will look. Modern, clean, and responsive.</p>
+        </div>
       </div>
-    </div>
-
-    <button id="new-post-btn">+ Write New Blog</button>
-  </section>
+      <button id="new-post-btn" class="btn-primary">+ Write New Blog</button>
+    </section>
+  </main>
 
   <!-- Blog Editor Modal -->
-  <div id="blog-editor-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); justify-content:center; align-items:center;">
-    <div style="background:white; padding:20px; border-radius:10px; max-width:600px; width:90%;">
+  <div id="blog-editor-modal" class="modal">
+    <div class="modal-content">
       <h3>New Blog Post</h3>
-      <input id="new-blog-title" type="text" placeholder="Blog Title" style="width:100%; margin-bottom:10px; padding:10px;">
-      <textarea id="new-blog-content" placeholder="Write your blog here (Markdown supported)" style="width:100%; height:200px; padding:10px;"></textarea>
-      <div style="margin-top:10px; display:flex; justify-content:space-between;">
-        <button id="save-blog-btn">Save & Copy</button>
-        <button id="close-blog-btn">Close</button>
+      <input id="new-blog-title" type="text" placeholder="Blog Title">
+      <textarea id="new-blog-content" placeholder="Write your blog here (Markdown supported)"></textarea>
+      <div class="modal-buttons">
+        <button id="save-blog-btn" class="btn-primary">Save & Copy</button>
+        <button id="close-blog-btn" class="btn-secondary">Close</button>
       </div>
     </div>
   </div>
