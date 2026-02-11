@@ -1,4 +1,4 @@
-/* General Styles */
+/* ===== General ===== */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -30,12 +30,39 @@ body {
   text-shadow: 1px 1px 5px #000;
 }
 
-/* Header */
-.blog-header {
+/* Hero / Header */
+.hero {
   text-align: center;
   padding: 60px 20px;
   color: white;
   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+/* Cards Section */
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  margin-top: 0;
 }
 
 /* Blog Grid */
@@ -57,9 +84,8 @@ body {
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   transition: 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .blog-post:hover {

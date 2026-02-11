@@ -3,35 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - SVM Blog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>SVM Blog | Contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>SVM Blog</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blogs.html">Blogs</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Contact Me</h1>
+    <p>Send me a message or connect at SVM Labs</p>
   </header>
 
-  <section class="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/mnjbjdak" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+  <main class="container">
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send</button>
     </form>
-  </section>
+  </main>
 
   <footer>
     ©svmlabs created by Santhosh Vishwamitra
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>

@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SVM Blog</title>
+  <title>SVM Blog | Blogs</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
   <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -16,20 +15,14 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Blog Header -->
-  <header class="blog-header">
+  <header class="hero">
     <h1>SVM Blog</h1>
-    <p>Modern, clean, and interactive blogs by Santhosh Vishwamitra</p>
+    <p>Modern, interactive blogs by Santhosh Vishwamitra</p>
   </header>
 
   <main class="container">
-    <!-- Blog Cards -->
     <section id="blog-list" class="blog-grid">
-      <div class="blog-post">
-        <h2>Sample Blog Post</h2>
-        <p>This is a sample blog post. Hover over me, and see the modern card effect!</p>
-        <button class="btn-primary read-more">Read More</button>
-      </div>
+      <!-- Blog posts appear here dynamically -->
     </section>
 
     <button id="new-post-btn" class="btn-primary">+ Write New Blog</button>
@@ -40,7 +33,7 @@
     <div class="modal-content">
       <h3>New Blog Post</h3>
       <input id="new-blog-title" type="text" placeholder="Blog Title">
-      <textarea id="new-blog-content" placeholder="Write your blog here (Markdown supported)"></textarea>
+      <textarea id="new-blog-content" placeholder="Write your blog here"></textarea>
       <div class="modal-buttons">
         <button id="save-blog-btn" class="btn-primary">Save & Copy</button>
         <button id="close-blog-btn" class="btn-secondary">Close</button>
