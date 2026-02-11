@@ -3,46 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogs - SVM Blog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>SVM Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>SVM Blog</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blogs.html">Blogs</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <p>Welcome to SVM Blog — write, share, and explore modern web articles!</p>
   </header>
 
-  <section class="blogs">
-    <h2>All Blogs</h2>
+  <section id="blogs-section">
     <div id="blog-list">
-      <!-- Blog posts will be dynamically loaded from /articles/ -->
+      <!-- Blog posts will be dynamically inserted here -->
+      <div class="blog-post">
+        <h2>Sample Blog Post</h2>
+        <pre>
+This is a sample blog post. It should wrap nicely inside the box without going in one long line. You can now write new posts using the + Write New Blog button.
+        </pre>
+      </div>
     </div>
+
     <button id="new-post-btn">+ Write New Blog</button>
   </section>
+
+  <!-- Blog Editor Modal -->
+  <div id="blog-editor-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); justify-content:center; align-items:center;">
+    <div style="background:white; padding:20px; border-radius:10px; max-width:600px; width:90%;">
+      <h3>New Blog Post</h3>
+      <input id="new-blog-title" type="text" placeholder="Blog Title" style="width:100%; margin-bottom:10px; padding:10px;">
+      <textarea id="new-blog-content" placeholder="Write your blog here (Markdown supported)" style="width:100%; height:200px; padding:10px;"></textarea>
+      <div style="margin-top:10px; display:flex; justify-content:space-between;">
+        <button id="save-blog-btn">Save & Copy</button>
+        <button id="close-blog-btn">Close</button>
+      </div>
+    </div>
+  </div>
 
   <footer>
     ©svmlabs created by Santhosh Vishwamitra
   </footer>
 
   <script src="script.js"></script>
-
-<!-- Blog Editor Modal -->
-<div id="blog-editor-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); justify-content:center; align-items:center;">
-  <div style="background:white; padding:20px; border-radius:10px; max-width:600px; width:90%;">
-    <h3>New Blog Post</h3>
-    <input id="new-blog-title" type="text" placeholder="Blog Title" style="width:100%; margin-bottom:10px; padding:10px;">
-    <textarea id="new-blog-content" placeholder="Write your blog here (Markdown supported)" style="width:100%; height:200px; padding:10px;"></textarea>
-    <div style="margin-top:10px; display:flex; justify-content:space-between;">
-      <button id="save-blog-btn">Save & Copy</button>
-      <button id="close-blog-btn">Close</button>
-    </div>
-  </div>
-</div>
 </body>
 </html>
