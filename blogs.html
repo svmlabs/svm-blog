@@ -7,24 +7,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>SVM Blog</h1>
-      <p>Modern, responsive, and clean articles at SVM Labs</p>
-    </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blogs.html" class="active">Blogs</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Blog Header -->
+  <header class="blog-header">
+    <h1>SVM Blog</h1>
+    <p>Modern, clean, and interactive blogs by Santhosh Vishwamitra</p>
   </header>
 
   <main class="container">
-    <section id="blogs-section">
-      <div id="blog-list" class="blog-grid">
-        <!-- Sample post -->
-        <div class="blog-post">
-          <h2>Sample Blog Post</h2>
-          <p>This is how your new blogs will look. Modern, clean, and responsive.</p>
-        </div>
+    <!-- Blog Cards -->
+    <section id="blog-list" class="blog-grid">
+      <div class="blog-post">
+        <h2>Sample Blog Post</h2>
+        <p>This is a sample blog post. Hover over me, and see the modern card effect!</p>
+        <button class="btn-primary read-more">Read More</button>
       </div>
-      <button id="new-post-btn" class="btn-primary">+ Write New Blog</button>
     </section>
+
+    <button id="new-post-btn" class="btn-primary">+ Write New Blog</button>
   </main>
 
   <!-- Blog Editor Modal -->
