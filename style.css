@@ -27,3 +27,15 @@ section { padding: 40px 20px; max-width: 900px; margin: auto; }
 footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; background: #f1f1f1; margin-top: 40px; }
 input, textarea { width: 100%; margin-bottom: 15px; padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
 button { cursor: pointer; }
+
+#blog-list pre {
+  white-space: pre-wrap;    /* Wrap long lines */
+  word-wrap: break-word;    /* Break words if too long */
+  background: #f5f5f5;      /* Optional: light background */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.blog-post {
+  margin-bottom: 20px;
+}
